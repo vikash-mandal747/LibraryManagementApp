@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const JWT_SECRETKEY = process.env.JWT_SECRETKEY;
-const UserModel = require("../model/user.model");
+const UserModel = require("../model/users.model");
 
 const cookieName = "access_token";
 

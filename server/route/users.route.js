@@ -2,7 +2,7 @@ const express = require("express");
 const bcrypt = require('bcrypt');
 require('dotenv').config()
 var jwt = require('jsonwebtoken');
-const UserModel = require("../model/user.model");
+const UserModel = require("../model/users.model");
 const { cookieName, requireAuth } = require("../middleware/auth.middleware");
 const saltRounds = 10;
 const JWT_SECRETKEY = process.env.JWT_SECRETKEY
